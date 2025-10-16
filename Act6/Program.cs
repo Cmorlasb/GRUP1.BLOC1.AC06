@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic;
 using System;
 
+// PRECONDITION: The user is prompted to input a temperature in Celsius.
 public class Program
 {
     public static void Main()
@@ -15,3 +16,4 @@ public class Program
         Console.WriteLine(MSG_RESULT + kelvin);
     }
 }
+// POSTCONDITION: 'kelvin' contains the converted temperature, and it is displayed.
