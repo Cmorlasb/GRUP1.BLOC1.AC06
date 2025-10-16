@@ -5,17 +5,13 @@ public class Program
 {
     public static void Main()
     {
-        const string MSG_INPUT1 = "Enter the first integer: ";
-        const string MSG_INPUT2 = "Enter the second integer: ";
-        const string MSG_RESULT = "The sum is: ";
-        int num1 = 0;
-        int num2 = 0;
-        int sum = 0;
-        Console.WriteLine(MSG_INPUT1);
-        num1 = int.Parse(Console.ReadLine());
-        Console.WriteLine(MSG_INPUT2);
-        num2 = int.Parse(Console.ReadLine());
-        sum = num1 + num2;
-        Console.WriteLine(MSG_RESULT + sum);
+        const string MSG_INPUT = "Enter termperature in Celsius: ";
+        const string MSG_RESULT = "Temperature in Kelvin: ";
+        float celsius = 0;
+        float kelvin = 0;
+        Console.WriteLine(MSG_INPUT);
+        celsius = float.Parse(Console.ReadLine());
+        kelvin = celsius + 273.15f;
+        Console.WriteLine(MSG_RESULT + kelvin);
     }
 }
