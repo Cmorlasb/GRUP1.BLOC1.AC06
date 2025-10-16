@@ -1,20 +1,27 @@
 ﻿using Microsoft.VisualBasic;
 using System;
 
-// PRECONDITION: The user is prompted to input an amount in euros.
+// PRECONDITION: The user is prompted to input three real numbers.
 public class Program
 {
     public static void Main()
     {
-        const float EXCHANGE_RATE = 1.12f;
-        const string MSG_INPUT = "Enter amount in euros: ";
-        const string MSG_RESULT = "Amount in dollars: ";
-        float euros = 0;
-        float dollars = 0;
-        Console.WriteLine(MSG_INPUT);
-        euros = float.Parse(Console.ReadLine());
-        dollars = euros * EXCHANGE_RATE;
-        Console.WriteLine(MSG_RESULT + dollars);
+        const string MSG_INPUT1 = "Enter the first number: ";
+        const string MSG_INPUT2 = "Enter the second number: ";
+        const string MSG_INPUT3 = "Enter the third number: ";
+        const string MSG_RESULT = "Enter the third number: ";
+        float num1 = 0;
+        float num2 = 0;
+        float num3 = 0;
+        float average = 0;
+        Console.WriteLine(MSG_INPUT1);
+        num1 = float.Parse(Console.ReadLine());
+        Console.WriteLine(MSG_INPUT2);
+        num2 = float.Parse(Console.ReadLine());
+        Console.WriteLine(MSG_INPUT3);
+        num3 = float.Parse(Console.ReadLine());
+        average = (num1 + num2 + num3) / 3;
+        Console.WriteLine(MSG_RESULT + average);
     }
 }
-// POSTCONDITION: 'dollars' contains the converted amount, and it is displayed.
+// POSTCONDITION: 'average' contains the arithmetic mean of the three numbers, and it is displayed.
