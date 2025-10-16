@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualBasic;
 using System;
 
+// PRECONDITION: The user is prompted to input two integers.
 public class Program
 {
     public static void Main()
@@ -19,3 +20,4 @@ public class Program
         Console.WriteLine(MSG_RESULT + sum);
     }
 }
+// POSTCONDITION: 'sum' contains the sum of 'num1' and 'num2', and it is displayed.
